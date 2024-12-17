@@ -6,17 +6,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "stats")
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class Stat {
 
     @Id
