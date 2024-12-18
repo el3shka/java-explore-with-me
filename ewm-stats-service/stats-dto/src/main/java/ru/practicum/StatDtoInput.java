@@ -19,18 +19,18 @@ public class StatDtoInput {
 
     @NotBlank
     @Size(max = 255)
-    private String app; //Идентификатор сервиса для которого записывается информация
+    private String app; // Identifier of the service for which the information is recorded
 
     @NotBlank
     @NotEmpty
     @Size(max = 255)
-    private String uri; //URI для которого был осуществлен запрос
+    private String uri; // URI for which the request was made
 
     @NotBlank
     @Size(max = 255)
-    private String ip; //IP-адрес пользователя, осуществившего запрос
+    private String ip; // IP address of the user who made the request
 
     @NotNull
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", shape = JsonFormat.Shape.STRING)
-    private LocalDateTime timestamp; //Дата и время, когда был совершен запрос к эндпоинту (в формате "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime timestamp; // Date and time when the request to the endpoint was made (in the format “yyyyy-MM-dd HH:mm:ss”)
 }
