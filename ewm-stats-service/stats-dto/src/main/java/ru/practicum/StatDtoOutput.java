@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class StatDtoOutput {
 
-    private String app; //Название сервиса
+    private String app; // Service name
 
-    private String uri; //URI сервиса
+    private String uri; // Service URI
 
-    private Long hits; //Количество просмотров
+    private Long hits; // Number of views
 }
