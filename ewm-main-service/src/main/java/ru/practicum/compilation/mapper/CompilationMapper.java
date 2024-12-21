@@ -23,7 +23,7 @@ public class CompilationMapper {
     }
 
     public static CompilationDtoOutput toCompilationDto(final Compilation compilation,
-                                                                final List<EventShortDto> eventShortDtoList) {
+                                                        final List<EventShortDto> eventShortDtoList) {
 
         final CompilationDtoOutput compilationDtoOutput = new CompilationDtoOutput();
 

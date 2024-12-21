@@ -9,7 +9,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import ru.practicum.User.model.User;
 import ru.practicum.User.repository.UserRepository;
 import ru.practicum.category.model.Category;
@@ -37,16 +36,9 @@ import ru.practicum.request.model.ParticipationRequestStatus;
 import ru.practicum.request.repository.ParticipationRequestRepository;
 import ru.practicum.stat.service.StatsService;
 
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 @Slf4j
 @Service

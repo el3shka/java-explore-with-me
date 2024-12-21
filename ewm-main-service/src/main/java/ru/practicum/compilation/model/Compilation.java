@@ -1,13 +1,6 @@
 package ru.practicum.compilation.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,11 +8,14 @@ import ru.practicum.event.model.Event;
 
 import java.util.List;
 
-@Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "compilations")
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class Compilation {
 
     @Id
