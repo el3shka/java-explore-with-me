@@ -10,11 +10,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users")
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class User {
 
     @Id
