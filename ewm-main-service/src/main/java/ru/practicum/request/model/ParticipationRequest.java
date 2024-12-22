@@ -19,11 +19,14 @@ import ru.practicum.event.model.Event;
 
 import java.time.LocalDateTime;
 
-@Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "requests")
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class ParticipationRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
