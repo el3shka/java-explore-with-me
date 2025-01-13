@@ -3,7 +3,6 @@ package ru.practicum.event.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import ru.practicum.User.dto.UserDtoShort;
-
 import ru.practicum.category.dto.CategoryOutputDto;
 
 import java.time.LocalDateTime;
@@ -17,7 +16,7 @@ public class EventShortDto {
 
     private CategoryOutputDto category; // Категория события
 
-    Integer confirmedRequests; //Количество одобренных заявок на участие в данном событии
+    private Integer confirmedRequests; //Количество одобренных заявок на участие в данном событии
 
     private String title; // Название события
 
@@ -28,5 +27,5 @@ public class EventShortDto {
 
     private Boolean paid; // Платное событие
 
-    Integer views; // Количество просмотров события
+    private Integer views; // Количество просмотров события
 }

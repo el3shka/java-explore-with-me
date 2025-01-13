@@ -35,45 +35,45 @@ public class Event {
 
     @ManyToOne
     @JoinColumn(name = "initiator_id", nullable = false)
-    private User initiator; // Инициатор события
+    private User initiator;
 
     @ManyToOne
     @JoinColumn(name = "category_id", nullable = false)
-    private Category category; // Категория события
+    private Category category;
 
     @Column(name = "confirmed_requests")
-    Integer confirmedRequests; //Количество одобренных заявок на участие в данном событии
+    Integer confirmedRequests;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "location_id", nullable = false)
-    private Location location; // место проведения события
+    private Location location;
 
-    private String title; // Название события
+    private String title;
 
-    private String annotation;  // Аннотация события
+    private String annotation;
 
-    private String description; // Описание события
+    private String description;
 
     @Enumerated(EnumType.STRING)
-    private EventState state; // Состояние события
+    private EventState state;
 
     @Column(name = "event_date", nullable = false)
-    private LocalDateTime eventDate; // Дата и время события
+    private LocalDateTime eventDate;
 
     @Column(name = "created_on")
-    private LocalDateTime createdOn; // Дата и время создания события
+    private LocalDateTime createdOn;
 
     @Column(name = "published_on")
-    private LocalDateTime publishedOn; // Дата и время публикации события
+    private LocalDateTime publishedOn;
 
     @Column(name = "participant_limit")
-    private Integer participantLimit; // Лимит участников
+    private Integer participantLimit;
 
-    private Boolean paid; // Платное событие
+    private Boolean paid;
 
     @Column(name = "request_moderation")
-    private Boolean requestModeration; // Модерация заявок
+    private Boolean requestModeration;
 
     @Transient
-    Integer views; // Количество просмотров события
+    Integer views;
 }
